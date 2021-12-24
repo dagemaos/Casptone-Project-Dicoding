@@ -33,16 +33,14 @@
 </header>
 
 <main>
-    <div>
-        <form class="p-3 text-center" action="/", method="POST">
-            <input type="form" class="hotel_name" name="hotel_name" placeholder="Enter a full hotel name">
-            <br> <button class="btn btn-secondary mt-3 rounded-pill" type="submit"  value="Submit"></button>
+    <div class="p-3 text-center">
+        <h2>Rekomendasi Hotel Jakarta</h2>
+        <form action='/' method="POST">
+            <input type="text" id="hotel_name" name="hotel_name" placeholder="Enter a full hotel name" required />
+            <input type="submit" id="submission_button" value="Submit"/>
         </form>
+        <br>
     </div>
-
-    {% if search_hotel %}
-    <p class="text-center"> Hasil rekomendasi <br> {{search_hotel}} </p>
-    {% endif %}
 </main>
 
 <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-secondary text-white">
