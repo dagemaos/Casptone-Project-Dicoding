@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Hotel Jakarta</title>
+    <link rel="stylesheet" href="static/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<header>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="static/image/hotel.png" alt="hotel-icon" width="30" height="24" class="d-inline-block align-text-top">
+            Rekomendasi Hotel Jakarta
+          </a>
+          <form class="d-flex">
+            <input class="form-control me-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-secondary" id="search-button" type="button">Search</button>
+          </form>
+        </div>
+    </nav>
+
+    <!-- jumbotron -->
+    <div class="container-fluid bg-white text-light p-5 jumbotron">
+        <h1 class="display-4 fw-bold">Selamat Datang</h1>
+        <hr>
+        <p>Cari rekomendasi hotel yang mirip dengan hotel yang pernah kamu kunjungi</p>
+    </div>
+</header>
+
+<main>
+    <div class="p-3 text-center">
+        <h2>Rekomendasi Hotel</h2>
+        <p>Hasil rekomendasi untuk {{ search_hotel }}</p>
+        <table class="demo-table" align="center">
+            <tr>
+                <th width="400px">Hotel Name</th>
+                <th width="50px">Ratings</th>
+                <th width="100px">Title</th>
+                <th width="150px">Price</th>
+            </tr>
+            <tbody class="table_body">
+                <tr>
+                    <td>{{ hotel_names[0] }}</td>
+                    <td>{{ hotel_scores[0] }}</td>
+                    <td>{{ hotel_titles[0] }}</td>
+                    <td>{{ hotel_prices[0] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ hotel_names[1] }}</td>
+                    <td>{{ hotel_scores[1] }}</td>
+                    <td>{{ hotel_titles[1] }}</td>
+                    <td>{{ hotel_prices[1] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ hotel_names[2] }}</td>
+                    <td>{{ hotel_scores[2] }}</td>
+                    <td>{{ hotel_titles[2] }}</td>
+                    <td>{{ hotel_prices[2] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ hotel_names[3] }}</td>
+                    <td>{{ hotel_scores[3] }}</td>
+                    <td>{{ hotel_titles[3] }}</td>
+                    <td>{{ hotel_prices[3] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ hotel_names[4] }}</td>
+                    <td>{{ hotel_scores[4] }}</td>
+                    <td>{{ hotel_titles[4] }}</td>
+                    <td>{{ hotel_prices[4] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ hotel_names[5] }}</td>
+                    <td>{{ hotel_scores[5] }}</td>
+                    <td>{{ hotel_titles[5] }}</td>
+                    <td>{{ hotel_prices[5] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ hotel_names[6] }}</td>
+                    <td>{{ hotel_scores[6] }}</td>
+                    <td>{{ hotel_titles[6] }}</td>
+                    <td>{{ hotel_prices[6] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ hotel_names[7] }}</td>
+                    <td>{{ hotel_scores[7] }}</td>
+                    <td>{{ hotel_titles[7] }}</td>
+                    <td>{{ hotel_prices[7] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ hotel_names[8] }}</td>
+                    <td>{{ hotel_scores[8] }}</td>
+                    <td>{{ hotel_titles[8] }}</td>
+                    <td>{{ hotel_prices[8] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ hotel_names[9] }}</td>
+                    <td>{{ hotel_scores[9] }}</td>
+                    <td>{{ hotel_titles[9] }}</td>
+                    <td>{{ hotel_prices[9] }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+  </div>
+</main>
+
+<footer id="sticky-footer" class="flex-shrink-0 py-4 bg-secondary text-white" style="position: sticky;">
+    <div class="container text-center">
+        <small>Copyright &copy; Rekomendasi Hotel Jakarta</small>
+    </div>
+</footer>
+</body>
+</html>
