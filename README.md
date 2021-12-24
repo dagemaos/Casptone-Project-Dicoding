@@ -2,8 +2,9 @@
 
 ## How to Run
 
-1. Clone repository
-2. Buka CMD dan sambungkan ke tempat penyimpanan file clone tadi
-3. Lalu jalankan script dibawah ini pada CMD `python regres.py`
-4. Lalu jalankan script dibawah ini pada CMD `python regres_dev.py`
-5. Salin link dan jalankan pada browser
+1. Install python
+2. Install flask
+3. Clone repository
+4. Buka CMD dan sambungkan ke tempat penyimpanan file clone tadi
+5. Lalu jalankan script dibawah ini pada CMD `python app.py`
+6. Salin link dan jalankan pada browser
